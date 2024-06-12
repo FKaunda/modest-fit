@@ -1,0 +1,168 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html{
+ scroll-behavior: smooth;
+}
+header{
+
+ max-width: 100vw;
+}
+.header-promo{
+ text-align: center;
+ background-color: aquamarine;
+ line-height: 30px;
+}
+nav{
+ display: flex;
+ justify-content: space-between;
+ margin: 20px;
+}
+.nav-links ul{
+ display: flex;
+ gap: 2rem;
+}
+ul li {
+ list-style: none;
+color: white;
+}
+.nav-list a{
+ padding: 5px;
+ background-color: lightgrey;
+}
+nav a{
+text-decoration: none;
+}
+.cart-icon ion-icon{
+vertical-align: bottom;
+color: white;
+padding-right: 5px;
+}
+.cart-icon a{
+ background-color: royalblue;
+ color: white;
+ cursor: pointer;
+}
+.cart-icon span{
+color: royalblue;
+}
+.container{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ padding: 20px;
+}
+.image{
+ position: relative;
+ overflow: hidden;
+ margin-right: 20px;
+ margin-left: 20px;
+}
+.image img{
+ width: 200px;
+ background-color: lightgrey;
+}
+.image h3{
+ /*text-align: center;*/
+ font-size: 15px;
+}
+.add-cart{
+ position: absolute;
+ width: 100%;
+ background-color: darkgrey;
+ transition: all 0.3s ease-in-out;
+ opacity: 0;
+ cursor:pointer;
+ text-align: center;
+ color: black;
+}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4{
+ bottom: 50px;
+ opacity: 1;
+ padding: 10px;
+ text-decoration: none;
+}
+/*products container*/
+.products-container{
+ max-width: 650px;
+ justify-content: space-around;
+ margin: 0 auto;
+ margin-top: 50px;
+}
+.products-container ion-icon{
+ font-size: 25px;
+ color: blue;
+ margin-left: 10px;
+ margin-right: 10px;
+ cursor: pointer;
+}
+.product img{
+  width: 100px;
+  height:100px;
+}
+.product-details{
+  flex-grow: 1;
+}
+.product-header{
+ width: 100%;
+ max-width: 650px;
+ display: flex;
+ justify-content: flex-start;
+ border-bottom: 4px solid lightgrey;
+ margin: 0 auto;
+}
+.product-title{
+ width: 45%;
+
+}
+.price{
+ width: 15%;
+ display: flex;
+ align-items: center;
+}
+.quantity {
+ width: 30%;
+ border-bottom: 1px solid lightgrey;
+ display: flex;
+ align-items: center;
+}
+.total{
+ width: 10%;
+  border-bottom: 4px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+.product{
+ width: 45%;
+ display: flex;
+ justify-content: space-around;
+ border-bottom: 1px solid lightgrey;
+ align-items: center;
+ padding: 10px 0;
+}
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+.basketTotalTitle{
+  width: 30%;
+}
+.basketTotal{
+  width: 10%;
+}
+.checkout-btn{
+ 
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
